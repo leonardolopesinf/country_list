@@ -9,8 +9,13 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
         font-family: 'Roboto', sans-serif;
-        background-color: ${props => props.theme.colors.primary}
+        color: ${props => props.theme.colors.white};
+        background-color: ${props => props.theme.colors.primary};
+        overflow-x: hidden;
     }
 
     label, a, img {
@@ -27,7 +32,6 @@ const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
-        color: #4383E3;
     }
 `;
 
